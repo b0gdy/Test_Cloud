@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+
+<p>List artists:</p>
+<br>
+
+{% for artist in artists %}
+	<p>Artist:</p>
+	<br>
+	<p>Artist ID = {{ artist['id'] }}</p>
+	<br>
+	<p>Artist name = {{ artist['name'] }}</p>
+	<br>
+{% endfor %}
+

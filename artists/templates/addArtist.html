@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+
+<p>Add a new artist</p>
+<br>
+
+<form method="post">
+	<label for="name">Name</label>
+	<br>
+	<br>
+	<input type="text" name="name" placeholder="Name" value="{{ request.form['name'] }}"></input>
+	<br>
+	<br>
+	
+	<button type="submit">Save</button>
+</form>

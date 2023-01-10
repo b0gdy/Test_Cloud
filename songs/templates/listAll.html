@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+
+<p>List songs:</p>
+<br>
+
+{% for song in songs %}
+	<p>Song:</p>
+	<br>
+	<p>Song ID = {{ song['song.id'] }}</p>
+	<br>
+	<p>Song name = {{ song['song.name'] }}</p>
+	<br>
+	<p>Song artist ID = {{ song['song.artistId'] }}</p>
+	<br>
+	<p>Artist name = {{ song['artist.name'] }}</p>
+	<br>
+{% endfor %}
+

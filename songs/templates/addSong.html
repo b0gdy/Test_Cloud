@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<p>Add a new song</p>
+<br>
+
+<form method="post">
+	<label for="name">Name</label>
+	<br>
+	<br>
+	<input type="text" name="name" placeholder="Name" value="{{ request.form['name'] }}"></input>
+	<br>
+	<br>
+	
+	<label for="artistId">Artist ID</label>
+	<br>
+	<br>
+	<input type="text" name="artistId" placeholder="Artist ID" value="{{ request.form['artistId'] }}"></input>
+	<br>
+	<br>
+	
+	<button type="submit">Save</button>
+</form>
